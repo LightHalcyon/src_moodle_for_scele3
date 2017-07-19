@@ -11,8 +11,13 @@
         <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <a href="create_user.php">Create User</a><br>
-        <a href="create_category.php">Create Category</a><br>
-        <a href="create_course.php">Create Course</a>
+        <form action="create_user_script.php" id="create_user" method="get">
+            Username: <input type="text" name="username"><br>
+            Password: <input type="password" name="password"><br>
+            First Name: <input type="text" name="firstname"><br>
+            Last Name: <input type="text" name="lastname"><br>
+            Email: <input type="email" name="email"><br>
+            <input type="submit" value="Submit">
+        </form> 
     </body>
 </html>
