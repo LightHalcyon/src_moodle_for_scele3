@@ -10,7 +10,7 @@ $restformat = 'json';
 /// PARAMETERS - NEED TO BE CHANGED IF YOU CALL A DIFFERENT FUNCTION
 $user1 = new stdClass();
 $user1->username = 'tes.baru.bla.bla';
-$user1->password = '1337lEEt`';
+$user1->password = '123456ASDFghjkl`';
 $user1->firstname = 'Hawari';
 $user1->lastname = 'Adit';
 $user1->email = 'harawi.adit.bla@localhost.com';

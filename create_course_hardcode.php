@@ -9,8 +9,8 @@ $restformat = 'json';
 
 /// PARAMETERS - NEED TO BE CHANGED IF YOU CALL A DIFFERENT FUNCTION
 $user1 = new stdClass();
-$user1->fullname = 'ampas';
-$user1->shortname = 'ams'; 
+$user1->fullname = 'wololo';
+$user1->shortname = 'wololo'; 
 $user1->categoryid = 2; 
 $user1->summary = '<p></p>';
 $user1->summaryformat = 1;
