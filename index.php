@@ -9,9 +9,10 @@
     </head>
     <body>
         <h1>Login</h1>
-        <form action="/action_page.php" method="get">
-            Username: <input type="text" name="uname"><br>
-            Password: <input type="password" name="pword"><br>
+        <form action="get_token.php" id="login" method="get">
+            Username: <input type="text" name="username"><br>
+            Password: <input type="password" name="password"><br>
+            <input type="hidden" name="service" value="test">
             <input type="submit" value="Submit">
         </form> 
     </body>
