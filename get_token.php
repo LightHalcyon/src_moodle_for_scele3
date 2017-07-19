@@ -3,7 +3,7 @@
     $username = $_GET["username"];
     $password = $_GET["password"];
     $service = "test";
-    $domainname = 'localhost/moodle';
+    $domainname = 'localhost/'.$_GET['domain'];
 
     /// REST CALL
     header('Content-Type: text/plain');
@@ -12,8 +12,11 @@
 
     $curl = new curl;
     $resp = $curl->post($serverurl);
+    //print_r($resp);
+    $out = json_decode($resp,true);
+    $_SESSION['token']=$out['token'];
+    $_SESSION['domainname']=$domainname;
     
-    $_SESSION['token']=$resp;
-    print_r("asdf");
+    //print_r($_SESSION['token']);
     header("location:menu.php");
 ?>

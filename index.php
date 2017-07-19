@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    if(isset($_SESSION['token'])) header("location:menu.php");
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,6 +16,7 @@
         <form action="get_token.php" id="login" method="get">
             Username: <input type="text" name="username"><br>
             Password: <input type="password" name="password"><br>
+            Moodle folder (Default: moodle): <input type="text" name="domain"><br>
             <input type="hidden" name="service" value="test">
             <input type="submit" value="Submit">
         </form> 
