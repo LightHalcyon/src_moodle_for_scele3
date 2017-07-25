@@ -3,19 +3,16 @@
     /// SETUP - NEED TO BE CHANGED
     $token =  $_SESSION['token'];
     $domainname = $_SESSION['domainname'];
-    $functionname = 'core_user_create_users';
+    $functionname = 'enrol_manual_enrol_users';
 
     // REST RETURNED VALUES FORMAT
     $restformat = 'json';
 
     /// PARAMETERS - NEED TO BE CHANGED IF YOU CALL A DIFFERENT FUNCTION
     $user1 = new stdClass();
-    $user1->username = $_GET['username'];
-    $user1->password = $_GET['password'];
-    $user1->firstname = $_GET['firstname'];
-    $user1->lastname = $_GET['lastname'];
-    $user1->email = $_GET['email'];
-    $user1->idnumber = $_GET['npm'];
+    $user1->roleid = $_GET['roleid'];
+    $user1->userid = $_GET['userid'];
+    $user1->courseid = $_GET['courseid'];
     // // ...more properties omitted
     // $preferencename1 = 'preference1';
     // $preferencename2 = 'preference2';
@@ -24,7 +21,7 @@
     //     array('type' => $preferencename2, 'value' => 'preferencevalue2'));
 
     $users = array($user1);
-    $params = array('users' => $users);
+    $params = array('enrolments' => $users);
 
     /// REST CALL
     header('Content-Type: text/plain');
