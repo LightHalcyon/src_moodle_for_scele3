@@ -16,8 +16,8 @@
         <form action="get_token.php" id="login" method="get">
             Username: <input type="text" name="username"><br>
             Password: <input type="password" name="password"><br>
-            Moodle folder (Default: moodle): <input type="text" name="domain"><br>
-            <input type="hidden" name="service" value="test">
+            Role (Service Shortname): <input type="text" name="service"><br>
+            Host: <input type="text" name="domain"><br>
             <input type="submit" value="Submit">
         </form> 
     </body>

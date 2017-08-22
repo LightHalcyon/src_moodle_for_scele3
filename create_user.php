@@ -17,6 +17,7 @@
             First Name: <input type="text" name="firstname"><br>
             Last Name: <input type="text" name="lastname"><br>
             Email: <input type="email" name="email"><br>
+            NPM: <input type="text" name="npm"><br>
             <input type="submit" value="Submit">
         </form> 
     </body>
