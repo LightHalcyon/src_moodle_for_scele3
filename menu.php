@@ -14,6 +14,7 @@
         <a href="create_user.php">Create User</a><br>
         <a href="create_category.php">Create Category</a><br>
         <a href="create_course.php">Create Course</a><br>
+        <a href="enrol_user.php">Enrol User</a><br>
         <a href="logout.php">Logout</a>
     </body>
 </html>

@@ -24,5 +24,15 @@ $curl = new curl;
 //if rest format == 'xml', then we do not add the param for backward compatibility with Moodle < 2.2
 $restformat = ($restformat == 'json')?'&moodlewsrestformat=' . $restformat:'';
 $resp = $curl->post($serverurl . $restformat, $params);
-print_r($resp);
+$courses3 = json_decode($resp)->courses;
+$courseid = '';
+foreach($courses3 as $corseses)
+{
+    //echo $corseses->shortname;
+    if($corseses->shortname == $user2)
+    {
+        $courseid = $corseses->id;
+    }
+}
+print_r($courseid);
 ?>

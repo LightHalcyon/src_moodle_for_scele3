@@ -14,6 +14,7 @@
     $user1->fullname = $_GET['fullname'];
     $user1->shortname = $_GET['shortname']; 
     $user1->categoryid = $_GET['catid']; 
+    $user1->idnumber = $_GET['id']; 
     if($_GET['sum']!=''){
         $user1->summary = $_GET['sum'];
     }else{
