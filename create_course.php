@@ -14,7 +14,7 @@
         <form action="create_course_script.php" id="create_user" method="get">
             Fullname: <input type="text" name="fullname"><br>
             Shortname: <input type="text" name="shortname"><br>
-            Category ID: <input type="number" name="catid"><br>
+            Category ID (Default: 1 as Miscellaneous): <input type="number" name="catid"><br>
             Summary (Optional): <input type="text" name="sum"><br>
             <input type="submit" value="Submit">
         </form> 

@@ -13,7 +13,7 @@
     <body>
         <form action="create_category_script.php" id="create_user" method="get">
             Name: <input type="text" name="nama"><br>
-            Parent ID: <input type="number" name="parent"><br>
+            Parent ID (Default: 0): <input type="number" name="parent"><br>
             ID (Optional): <input type="text" name="idnumber"><br>
             Description (Optional): <input type="text" name="desc"><br>
             <input type="submit" value="Submit">
